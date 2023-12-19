@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Login</h2>
+
+    <!-- form - cria um formulário na página-->
+    <form action="arquivo.js"> <!-- action="" - o action vai utilizar algum arquivo nosso para buscar as informações abaixo do "name" para capturar os dados-->
+
+        Login: <br>
+        <!-- input - Cria um uma caixa em que o usuario pode colocar varios tipos de informações-->
+        <input type="text" name="login"><br> <!--type = text, password, number, checkbox, button.  name - para recuperar esses dados num backend-->
+        
+        Senha:<br>
+        <input type="password" name="senha"> <br>
+
+        <!-- value - nome dentro do input-->
+        <input type="submit" value="Logar"> <!-- type="submit" - colocamos o type do input como submit, que a ação de enviar o formulário-->
+
+    </form>
+
+
+    <form action="">
+    <!-- Agora vamos fazer um formulário para se cadastrar-->
+    <h2>Cadastre-se</h2>
+
+    Login: <br>
+    <input type="text" name="login"> <br> <br>
+
+    Sexo: <br>
+    <!-- os inputs abaixo é necessário marcar um ou outro, não tem como marcar os dois-->
+    <input type="radio" name="sexo" value="M"> <!-- radio - para fazer um ciruclo de marcação, e o name deve ser o mesmo pois são as mesmas informações com dados diferentes-->
+    Masculino <br> 
+    <input type="radio" name="sexo" value="F">
+    Feminino <br>
+    <input type="radio" name="sexo" value="F">
+    LGBTQUIA+CROCODILOVOADORSEMASAS <br> <br>
+
+    <!-- checkbox - um quadrado de marcação com opção de marcar ou desmarcar a opção-->
+    Interesses <br>
+    <input type="checkbox" name="interesses"> Futebol <br>
+    <input type="checkbox" name="interesses"> Cursos <br>
+    <input type="checkbox" name="interesses"> Moda <br>
+
+    Estado: <br>
+
+    <!-- SELECT - cria uma caixa de seleção, que dentro dela contem varias outras opções-->
+    <select name="estado"> <!-- pelo name nós conseguiriamos recuperar o estado e dentro dele as opções que o usuario escolheu pelo value-->
+        <!-- option - opções dentro da caixa-->
+        <option value="sp">SP</option>
+        <option value="pr">PR</option>
+        <option value="rj">RJ</option>
+        <option value="mg">MG</option>
+        <option value="sc">SC</option>
+    </select>
+
+    Observações: <br>
+
+    <!-- textarea - cria uma área de texto para o usuario digitar algum texto ou comentário-->
+    <textarea></textarea> <br>
+
+    <input type="submit" value="Cadastrar"> 
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- Usamos tabelas na web, para tabular algumas informações, como criar uma lista de produtos, de pilotos, de pessoas-->
+    
+    <h2>Produtos</h2>
+    <!-- table - cria uma tabela na página, mas ainda precisamos das linhas e dos dados para formar uma-->
+    <table border="2" width="300">  <!--podemos formatar a tabela diretamente dentro dela, com largura, borda e etc...-->
+        <!-- tr - significa linha da tabela, cria uma linha na tabela-->
+        <tr>
+            <!-- th - coloca os dados desta linha na tabela como se fosse o cabeçalho da tabela, deixa centralizado e em negrito-->
+            <th> Código </th>
+            <th> Produto </th>
+            <th> Preço </th>
+        </tr>
+
+        <tr>
+            <!-- td - coloca os dados desta linha na tabela-->
+            <td> 001 </td>
+            <td> Notebook </td>
+            <td> R$2.500,99 </td>
+        </tr>
+
+        <tr>
+            <td> 002 </td>
+            <td> Tablet </td>
+            <td> R$999,99 </td>
+        </tr>
+
+        <tr>
+            <td> Desconto </td>
+            <td> cumpo1 -R$10 </td>
+            <td></td> <!--Podemos também criar uma coluna sem dados-->
+        </tr>
+
+        <tr>
+            <td> Desconto2 </td>
+            <td colspan="2"> cumpo1 -R$30 </td> <!-- colspan="" - pode expandir essa coluna, para que ela ocupe duas ou mais colunas...-->
+        </tr>
+
+        <tr>
+            <td rowspan="2"> Desconto3 </td> <!-- rowspan="" - pode expandir colunas para baixo, ocupa mais de uma ou duas linhas-->
+            <td colspan="2"> cumpo1 -R$50 </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> cumpo1 -R$50 </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> Total:</td>
+            <th>R$ 3.478,98</th>
+        </tr>
+    </table>
+
+</body>
+</html>
