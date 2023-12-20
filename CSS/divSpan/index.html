@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #topo {
+            background: blue;
+        }
+
+        #conteudo{
+            background-color: blueviolet;
+        }
+
+        .produtos {
+            background-color: red;
+            margin: 10px;
+        }
+
+        #rodape {
+            background-color: green;
+        }
+
+        #assinatura {
+            background-color: brown;
+        }
+
+        #assinatura-div {
+            background-color: yellow;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- div - usado para fazer uma divisão dentro do nosso site-->
+
+    <!-- Uma div ocupa todo o espaçamento da tela por padrão, consideramos ela do tipo block-->
+
+    <div id="topo">
+        <img src="https://logodownload.org/wp-content/uploads/2014/04/amazon-logo-0.png" width="200" height="200">
+
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+
+    <div id="conteudo">
+        <div class="produtos">
+            Produto 1
+        </div>
+
+        <div class="produtos">
+            Produto 2
+        </div>
+
+        <div class="produtos">
+            Produto 3
+        </div>
+    </div>
+
+    <div id="rodape">Todos os direitos reservados</div>
+
+    <!-- span - é como uma div, mas ele é do tipo inline, e só ocupa seu proprio espaço-->
+    <span id="assinatura">
+        Olá eu sou o span
+    </span>
+
+    <!-- aqui o span vai aparecer do lado do outro span, pois ele não ocupe uma linha inteira-->
+    <span>
+        Olá eu sou o 2 span
+    </span>
+
+    <div id="assinatura-div">
+        Olá eu sou a div
+    </div>
+
+    <!-- aqui a div vai descer para a linha de baixo, pois uma div ocupa uma linha inteira-->
+    <div>
+        Olá eu sou a 2 div
+    </div>
+
+    <div>
+        Teste do <span class="azul">span</span> aqui
+    </div>
+
+</body>
+</html>
